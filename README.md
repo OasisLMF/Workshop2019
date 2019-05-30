@@ -32,17 +32,6 @@ pip install --force-reinstall --upgrade git+https://github.com/OasisLMF/OasisLMF
 pip install ipykernel
 ipython kernel install --user --name=ZurichWorkshop2018
 ```
-### Using Docker
-
-To build the Docker image, run the following command:
-```
-docker build -f Dockerfile.workshop -t zurich_workshop .
-```
-Then to run the container, run:
-```
-docker run -it -p 8888:8888 zurich_workshop
-```
-You can then open the notebooks in a browser at http://localhost:8888/tree
 
 ## Exercises
 
@@ -53,9 +42,10 @@ The exercises are provided as interactive Jupyter notebooks. Jupyter is an open-
 jupyter notebook  --NotebookApp.token='' --NotebookApp.password=''
 ```
 
-#### Excercise 1: Introduction to the Oasis Model Development Kit (MDK).
-#### Excercise 2: Introduction to Oasis model files and formats.
-#### Excercise 3: Using code to adjust a model.
+#### Excercise 1: Exposure data in OED and the Oasis FM.
+#### Excercise 2: Running a model in the Oasis MDK.
+#### Excercise 3: Running a model in the Oasis API.
+#### Excercise 4: Running a model in the Oasis UI.
 
 ## Documentation
 ### Oasis
