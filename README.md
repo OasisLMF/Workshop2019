@@ -4,7 +4,8 @@
 
 Workshop material for 2019 conferences.
 
-## Model data
+## Overview
+### Model data
 
 The model data is an adapted version of a GEM hazard model for the Dominican Republic. This was adapted for use by the insurance industry and ported to the Oasis model format by Sunstone Risk. Further details can be found [here](http://www.sunstonerisk.com/gem/).
 
@@ -21,33 +22,32 @@ If using another distribution then the comparable packages will need to be ident
 
 We recommend using a Python virtual environment for running the excercises. To set up the your virtual environment, run the following commands in the project root directory:
 
-```http://www.catrisks.com/
+```
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 jupyter nbextension enable --py --sys-prefix qgrid
-# Temporary requirement to use new lookup framework in the development version of the oasislmf package
-pip install --force-reinstall --upgrade git+https://github.com/OasisLMF/OasisLMF.git@master#egg=oasislmf
 
 pip install ipykernel
-ipython kernel install --user --name=ZurichWorkshop2018
+ipython kernel install --user --name=OasisWorkshop2018
+```
+
+Jupyter, which is used for the first two excercises, us launched by running the following command:
+
+jupyter notebook  --NotebookApp.token='' --NotebookApp.password='' &
 ```
 
 ## Exercises
 
 #### Running the exercises
-The exercises are provided as interactive Jupyter notebooks. Jupyter is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. To launch Jupyter, run the following command which will start Jupyter and open the home page in a browser window. You can then navigate to the relevant workbook.
-
-```
-jupyter notebook  --NotebookApp.token='' --NotebookApp.password=''
-```
+The first two exercises are provided either as interactive Jupyter notebooks. Jupyter is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. The other excercies will be ran directlt from the Linux shell.
 
 #### Excercise 1: Exposure data in OED and the Oasis FM.
 #### Excercise 2: Running a model in the Oasis MDK.
 #### Excercise 3: Running a model in the Oasis API.
 #### Excercise 4: Running a model in the Oasis UI.
 
-## Documentation
+## Reference ocumentation
 ### Oasis
 * <a href="https://oasislmf.github.io">General Oasis documentation</a>
 * <a href="http://localhost:8000/html/docs/oasis_cli.html">Model Development Kit (MDK)</a>
