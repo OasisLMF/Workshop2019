@@ -1,0 +1,15 @@
+autoconf
+build-essential
+gdb
+libgeos-dev
+libmysqlclient-dev
+libspatialindex-dev
+python-dev
+python-flask
+python-pip
+tree
+unixodbc
+unixodbc-dev
+vim
+git
+apt-utils
