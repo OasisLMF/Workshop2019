@@ -2,12 +2,20 @@
 
 # Oasis Workshop 2019
 
-Workshop material for 2019 conferences.
-
 ## Overview
 ### Model data
 
-The model data is an adapted version of a GEM hazard model for the Dominican Republic. This was adapted for use by the insurance industry and ported to the Oasis model format by Sunstone Risk. Further details can be found [here](http://www.sunstonerisk.com/gem/).
+The model data used in the exercises is an adapted version of a GEM hazard model for the Dominican Republic. This is based in work by Sunstone Risk, further details ow which can be found [here](http://www.sunstonerisk.com/gem/). In the full implementation different intensity measures are used depending on the risk, but in the workshop version we have a simplified version using PGA only.
+
+### Oasis ecosystem
+
+The Oasis ecosystem is shown in the diiagram below.
+
+
+There are fourn main 
+
+This workshop will illustrate how the components of the ecosystem fit together.
+
 
 ## Setting up the environment
 
@@ -18,21 +26,27 @@ The pre-requisites for the system on an Ubuntu based system are listed in apt.tx
 ```
 cat apt.txt | xargs apt-get install -y
 ```
+
 If using another distribution then the comparable packages will need to be identified and installed, or alternatively use a Docker image.
 
-We recommend using a Python virtual environment for running the excercises. To set up the your virtual environment, run the following commands in the project root directory:
+We recommend using a Python virtual environment for running the excercises. To set up the your virtual environment, run the following commands in the project root directory. Note that Python 3.6 is required for the Oasis MDK.
 
 ```
-virtualenv venv
+virtualenv -p /usr/bin/python3.6 venv
 source venv/bin/activate
 pip install -r requirements.txt
 jupyter nbextension enable --py --sys-prefix qgrid
-
 pip install ipykernel
 ipython kernel install --user --name=OasisWorkshop2018
 ```
 
-Jupyter, which is used for the first two excercises, us launched by running the following command:
+The full model data also needs to be created from smaller files, that are compabable with Git file size restrictions:
+
+```
+cat gem/model_data/GMO/footprint_data/* > gem/model_data/footprint.csv
+```
+
+Jupyter, which is used for the first two excercises, can be launched by running the following command within the virtualenv:
 
 jupyter notebook  --NotebookApp.token='' --NotebookApp.password='' &
 ```
