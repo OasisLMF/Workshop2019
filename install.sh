@@ -6,8 +6,4 @@ pip install -r requirements.txt
 sudo jupyter nbextension enable --py --sys-prefix qgrid
 source venv/bin/deactivate
 
-git clone https://github.com/OasisLMF/gem
-cd gem/oasis-test/model_data/GMO
-wget http://sunstonerisk.com/files/domrep/footprint.csv.gz
-gunzip footprint.csv.gz
-cd ../../..
+cat gem/model_data/GMO/footprint_data/* > gem/model_data/footprint.csv
