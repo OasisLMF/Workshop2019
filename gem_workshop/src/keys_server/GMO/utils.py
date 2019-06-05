@@ -1,3 +1,0 @@
-"""
-Utilities for GMO model
-"""
