@@ -35,7 +35,6 @@ We recommend using a Python virtual environment for running the excercises. To s
 virtualenv -p /usr/bin/python3.6 venv
 source venv/bin/activate
 pip install -r requirements.txt
-jupyter nbextension enable --py --sys-prefix qgrid
 pip install ipykernel
 ipython kernel install --user --name=OasisWorkshop2018
 ```
@@ -74,6 +73,11 @@ For the exercise details, go to the exercise_3 Jupyter notebook.
 
 #### Excercise 4: Running a model in the Oasis UI.
 In this exercise you will run an analysis using the Oasis UI.
+
+```
+docker-compose -f docker-compose.oasis_ui.yml up -d
+docker ps -a
+```
 
 ## Reference ocumentation
 ### Oasis
