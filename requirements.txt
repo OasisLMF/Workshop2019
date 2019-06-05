@@ -1,4 +1,4 @@
-oasislmf
+#oasislmf
 Jupyter
 Notebook
 jupyter_kernel_gateway
@@ -17,3 +17,7 @@ pytest
 qgrid   
 tabulate>=0.8.2
 folium
+csvutils
+geopandas
+seaborn
+bokeh
