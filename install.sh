@@ -1,6 +1,7 @@
-sudo cat apt.txt | xargs apt-get install -y
+#!/bin/bash
+cat apt.txt | xargs sudo apt-get install -y
 
-virtualenv -p /usr/bin/pyjon3.6 venv
+virtualenv -p python3 venv
 source venv/bin/activate
 pip install -r requirements.txt
 

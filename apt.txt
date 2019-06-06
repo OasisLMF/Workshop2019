@@ -8,8 +8,6 @@ python-dev
 python-flask
 python-pip
 tree
-unixodbc
-unixodbc-dev
 vim
 git
 apt-utils
