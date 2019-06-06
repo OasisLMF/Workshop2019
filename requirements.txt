@@ -1,4 +1,3 @@
-#oasislmf
 git+https://github.com/OasisLMF/OasisLMF.git@feature/workshop2019#egg=oasislmf
 Jupyter
 Notebook
