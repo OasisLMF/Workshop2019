@@ -5,6 +5,7 @@ libgeos-dev
 libmysqlclient-dev
 libspatialindex-dev
 python-dev
+python3-dev
 python-flask
 python-pip
 tree
