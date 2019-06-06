@@ -3,6 +3,11 @@ import io
 from IPython.display import display
 import fileupload
 import os
+from IPython.core.display import display, HTML
+
+def set_style():
+    display(HTML("<style>.container { width:90% !important; }</style>"))
+    display(HTML("<style>table {margin-left: 0 !important;}</style>"))
 
 def show_df(df):
     grid_options = {
