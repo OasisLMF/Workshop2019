@@ -29,7 +29,7 @@ cat apt.txt | xargs apt-get install -y
 
 If using another distribution then the comparable packages will need to be identified and installed, or alternatively use a Docker image.
 
-We recommend using a Python virtual environment for running the excercises. To set up the your virtual environment, run the following commands in the project root directory. Note that Python 3.6 is required for the Oasis MDK.
+We recommend using a Python virtual environment for running the exercises. To set up the your virtual environment, run the following commands in the project root directory. Note that Python 3.6 is required for the Oasis MDK.
 
 ```
 virtualenv -p /usr/bin/python3.6 venv
@@ -45,7 +45,7 @@ The full model data also needs to be created from smaller files, that are compab
 cat gem/model_data/GMO/footprint_data/* > gem/model_data/footprint.csv
 ```
 
-Jupyter, which is used for the first two excercises, can be launched by running the following command within the virtualenv:
+Jupyter, which is used for the first two exercises, can be launched by running the following command within the virtualenv:
 
 ```
 jupyter notebook  --NotebookApp.token='' --NotebookApp.password='' &
@@ -56,13 +56,13 @@ jupyter notebook  --NotebookApp.token='' --NotebookApp.password='' &
 #### Running the exercises
 The first two exercises are provided either as interactive Jupyter notebooks. Jupyter is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. The other excercies will be ran directlt from the Linux shell.
 
-#### Excercise 1: Exposure data in OED and the Oasis FM.
+#### Exercise 1: Exposure data in OED and the Oasis FM.
 In this exercise you will create and validate some exposure in OED format. For the exercise details, go to the exercise_1 Jupyter notebook.
 
-#### Excercise 2: Running a model in the Oasis MDK.
+#### Exercise 2: Running a model in the Oasis MDK.
 In this exercise you will look at the various files that constitute an Oasis model, then run an analysis using the MDK. For the exercise details, go to the exercise_2 Jupyter notebook.
 
-#### Excercise 3: Running a model in the Oasis API.
+#### Exercise 3: Running a model in the Oasis API.
 In this exercise you will run an analysis using the Oasis API. First, we need to start the API by running the following commands:
 ```
 cd gem
@@ -71,7 +71,7 @@ docker ps -a
 ```
 For the exercise details, go to the exercise_3 Jupyter notebook.
 
-#### Excercise 4: Running a model in the Oasis UI.
+#### Exercise 4: Running a model in the Oasis UI.
 In this exercise you will run an analysis using the Oasis UI.
 
 ```
