@@ -1,5 +1,6 @@
 version: '3' 
-user-interface:
+services:
+  user-interface:
     image: coreoasis/oasisui_app:latest
     environment:
      # - API_IP=server
