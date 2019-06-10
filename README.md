@@ -57,7 +57,7 @@ cat gem/model_data/GMO/footprint_data/* > gem/model_data/GMO/footprint.csv
 Jupyter, which is used for the first two exercises, can be launched by running the following command within the virtualenv:
 
 ```
-jupyter notebook  --NotebookApp.token='' --NotebookApp.password='' &
+jupyter notebook  --NotebookApp.token='' --NotebookApp.password='' --no-browser &
 ```
 
 ## Exercises
