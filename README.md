@@ -57,7 +57,7 @@ cat gem/model_data/GMO/footprint_data/* > gem/model_data/GMO/footprint.csv
 Jupyter, which is used for the first two exercises, can be launched by running the following command within the virtualenv:
 
 ```
-jupyter notebook  --NotebookApp.token='' --NotebookApp.password='' --no-browser &
+jupyter notebook  --NotebookApp.token='' --NotebookApp.password='' --no-browser --port=8888 --ip=0.0.0.0 --NotebookApp.base_url=/jupyter --allow-root
 ```
 
 ## Exercises
@@ -95,7 +95,7 @@ For the exercise details, go to the exercise_3 Jupyter notebook.
 In this exercise you will run an analysis using the Oasis UI.
 
 ```
-docker-compose -f docker-compose.oasis_ui.yml up -d
+docker-compose -f docker-compose.oasis_ui.yml -f docker-compose.oasis.yml up -d
 docker ps -a
 ```
 ##### Exercise goals:
