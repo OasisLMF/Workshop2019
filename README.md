@@ -9,13 +9,22 @@ The model data used in the exercises is an adapted version of a GEM hazard model
 
 ### Oasis ecosystem
 
-The Oasis ecosystem is shown in the diiagram below.
+The Oasis ecosystem has four main components:
 
+1 - Oasis Platform
+Data standards, an API, tools and components for building and running catastrophe models. 
+2- Oasis User Interface
+Web based application for uploading exposure, running models deployed in Oasis, and retrieving results. 
+3- Oasis Model Development Kit
+Set of tools for building, calibrating and creating the deployment assets for Oasis-ready models.
+4- Oasis Model Library
+Hosted catalogue for Oasis-ready models.
 
-There are fourn main 
+The ecosystem is shown in the diiagram below.
 
-This workshop will illustrate how the components of the ecosystem fit together.
+<img src="images/oasis_ecosystem.png" alt="Oasis ecosystem"/>
 
+This excercises in this workshop will illustrate how the components of the ecosystem fit together, and how different components can be used together at different points of model development, deplyment and execution.
 
 ## Setting up the environment
 
@@ -24,7 +33,7 @@ This workshop will illustrate how the components of the ecosystem fit together.
 The pre-requisites for the system on an Ubuntu based system are listed in apt.txt. These can be installed by running:
 
 ```
-cat apt.txt | xargs apt-get install -y
+cat apt.txt | xargs sudo apt-get install -y
 ```
 
 If using another distribution then the comparable packages will need to be identified and installed, or alternatively use a Docker image.
@@ -58,9 +67,17 @@ The first two exercises are provided either as interactive Jupyter notebooks. Ju
 
 #### Exercise 1: Exposure data in OED and the Oasis FM.
 In this exercise you will create and validate some exposure in OED format. For the exercise details, go to the exercise_1 Jupyter notebook.
+##### Excercise goals:
+- Understand the basic structure of the OED format.
+- Use Python code to create exposure data.
+- Use the Oasis MDK to run deterministic analyses for direct and reinsurance contracts.
 
 #### Exercise 2: Running a model in the Oasis MDK.
 In this exercise you will look at the various files that constitute an Oasis model, then run an analysis using the MDK. For the exercise details, go to the exercise_2 Jupyter notebook.
+##### Exercise goals:
+- Understand the Oasis model files.
+- Use Python code to view the model files for an example model.
+- Use the Oasis MDK to create exposure and run deterministic analyses for direct and reinsurance contracts.
 
 #### Exercise 3: Running a model in the Oasis API.
 In this exercise you will run an analysis using the Oasis API. First, we need to start the API by running the following commands:
@@ -70,6 +87,9 @@ docker-compose up -d
 docker ps -a
 ```
 For the exercise details, go to the exercise_3 Jupyter notebook.
+##### Exercise goals:
+- Understand the Oasis API.
+- Use Python code to run an analysis via the API.
 
 #### Exercise 4: Running a model in the Oasis UI.
 In this exercise you will run an analysis using the Oasis UI.
@@ -78,6 +98,8 @@ In this exercise you will run an analysis using the Oasis UI.
 docker-compose -f docker-compose.oasis_ui.yml up -d
 docker ps -a
 ```
+##### Exercise goals:
+- Introduction to the Oasis UI.
 
 ## Reference ocumentation
 ### Oasis
