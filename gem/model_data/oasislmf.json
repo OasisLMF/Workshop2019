@@ -1,0 +1,6 @@
+{
+    "model_data_path": "/var/oasis/model_data/GMO",
+    "lookup_config_file_path": "/var/oasis/keys_data/GMO/lookup.json",
+    "keys_data_path": "/var/oasis/keys_data/GMO",
+    "model_version_file_path": "/var/oasis/keys_data/GMO/ModelVersion.csv"
+}
