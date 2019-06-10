@@ -51,7 +51,7 @@ ipython kernel install --user --name=OasisWorkshop2018
 The full model data also needs to be created from smaller files, that are compabable with Git file size restrictions:
 
 ```
-cat gem/model_data/GMO/footprint_data/* > gem/model_data/footprint.csv
+cat gem/model_data/GMO/footprint_data/* > gem/model_data/GMO/footprint.csv
 ```
 
 Jupyter, which is used for the first two exercises, can be launched by running the following command within the virtualenv:
