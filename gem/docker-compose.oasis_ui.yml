@@ -1,0 +1,6 @@
+version: '3' 
+user-interface:
+    image: coreoasis/oasisui_app:latest
+    environment:
+     # - API_IP=server
+     - API_PORT=8000
