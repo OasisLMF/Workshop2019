@@ -30,7 +30,7 @@ This excercises in this workshop will illustrate how the components of the ecosy
 
 ### Local install (Linux)
 
-The pre-requisites for the system on an Ubuntu based system are listed in apt.txt. These can be installed by running:
+The pre-requisites for the system on an Ubuntu based system are listed in apt.txt. These can be installed by running the following command. Note that this is not required if your environment has been provided as part of an Oasis workshop.
 
 ```
 cat apt.txt | xargs sudo apt-get install -y
@@ -95,7 +95,7 @@ For the exercise details, go to the exercise_3 Jupyter notebook.
 In this exercise you will run an analysis using the Oasis UI.
 
 ```
-docker-compose -f docker-compose.oasis_ui.yml -f docker-compose.oasis.yml up -d
+docker-compose -f docker-compose.oasis_ui.yml -f docker-compose.yml up -d
 docker ps -a
 ```
 ##### Exercise goals:
