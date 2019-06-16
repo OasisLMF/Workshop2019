@@ -1,0 +1,5 @@
+PortNumber,AccNumber,PolNumber,LayerAttachment,LayerLimit,LayerParticipation
+1,1,1,25000,25000,1.0
+1,1,2,50000,25000,1.0
+1,2,3,25000,25000,1.0
+1,2,4,50000,25000,1.0

@@ -1,0 +1,7 @@
+PortNumber,AccNumber,LocNumber,GeogName,AreaName1,Latitude,Longitude,CountryCode,ConstructionCode,OccupancyCode,NumberOfStoreys,BuildingTIV,LocPerilsCovered
+1,1,1,Pedro Brand,Santa Domingo,18.64788,-70.09339,DR,5000,1000,1,100000,QEQ
+1,1,2,Sabana Grande de Boyá,Monte Plata,18.9582,-69.85408,DR,5000,1000,3,25000,QEQ
+1,1,3,Santa Cruz de Barahona,Barahona,18.22769,-71.1752,DR,5100,1000,1,27000,QEQ
+1,2,4,Villa Vázquez,Monte Cristi,19.8079,-71.44,DR,5000,1000,1,33000,QEQ
+1,2,5,Guayubín,Monte Cristi,19.73665,-71.29112,DR,5000,1000,1,38400,QEQ
+1,2,6,Cabrera,María Trinidad Sánchez,19.60861,-69.97794,DR,5000,1000,2,67300,QEQ

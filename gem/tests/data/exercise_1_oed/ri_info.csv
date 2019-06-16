@@ -1,0 +1,3 @@
+ReinsNumber,RiskLimit,RiskAttachment,OccLimit,OccAttachment,PlacedPercent,InuringPriority,ReinsType
+1,1000,1000,0,0,1.0,1,FAC
+2,0,0,1000,1000,1.0,2,CXL
