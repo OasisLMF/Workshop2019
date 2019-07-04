@@ -4,7 +4,7 @@ csvutils
 fileupload
 folium
 geopandas
-git+https://github.com/OasisLMF/OasisLMF.git@develop#egg=oasislmf
+git+https://git@github.com/OasisLMF/OasisLMF.git@develop#egg=oasislmf
 hypothesis
 ipdb
 ipywidgets
