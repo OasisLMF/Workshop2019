@@ -28,6 +28,8 @@ These exercises in this workshop will illustrate how the components of the ecosy
 
 ## Setting up the environment
 
+Workshop can run on Linux, MacOS and Windows 10 but requires Docker and WSL for Windows.
+
 ### Local install (Linux)
 
 The pre-requisites for the system on an Ubuntu based system are listed in apt.txt. These can be installed by running the following command. Note that this is not required if your environment has been provided as part of an Oasis workshop.
