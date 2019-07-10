@@ -20,11 +20,11 @@ Set of tools for building, calibrating and creating the deployment assets for Oa
 4- Oasis Model Library
 Hosted catalogue for Oasis-ready models.
 
-The ecosystem is shown in the diiagram below.
+The ecosystem is shown in the diagram below.
 
 <img src="images/oasis_ecosystem.png" alt="Oasis ecosystem"/>
 
-This excercises in this workshop will illustrate how the components of the ecosystem fit together, and how different components can be used together at different points of model development, deplyment and execution.
+These exercises in this workshop will illustrate how the components of the ecosystem fit together, and how different components can be used together at different points of model development, deployment and execution.
 
 ## Setting up the environment
 
@@ -48,7 +48,7 @@ pip install ipykernel
 ipython kernel install --user --name=OasisWorkshop2018
 ```
 
-The full model data also needs to be created from smaller files, that are compabable with Git file size restrictions:
+The full model data also needs to be created from smaller files, that are compatible with Git file size restrictions:
 
 ```
 cat gem/model_data/GMO/footprint_data/* > gem/model_data/GMO/footprint.csv
@@ -59,7 +59,7 @@ Jupyter, which is used for the first two exercises, can be launched by running t
 ```
 jupyter notebook  --NotebookApp.token='' --NotebookApp.password='' --no-browser --port=8888 --ip=0.0.0.0 --NotebookApp.base_url=/jupyter --allow-root
 ```
-### Local install (Windows)
+### Local install (Windows 10)
 
 To run the Oasis workshop on Windows, WSL is needed. A guide to setting up WSL:
 https://docs.microsoft.com/en-us/windows/wsl/install-win10
@@ -90,13 +90,13 @@ docker ps -a
 ## Exercises
 
 #### Running the exercises
-The first two exercises are provided either as interactive Jupyter notebooks. Jupyter is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. The other excercies will be ran directly from the Linux shell.
+The first two exercises are provided either as interactive Jupyter notebooks. Jupyter is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. The other exercises will be ran directly from the Linux shell.
 
 #### Exercise 1: Exposure data in OED and the Oasis FM.
 In this exercise you will create and validate some exposure in OED format. For the exercise details, go to the exercise_1 Jupyter notebook.
 
 The notebooks can be accessed via: http://localhost:8888
-##### Excercise goals:
+##### Exercise goals:
 - Understand the basic structure of the OED format.
 - Use Python code to create exposure data.
 - Use the Oasis MDK to run deterministic analyses for direct and reinsurance contracts.
@@ -110,14 +110,14 @@ In this exercise you will look at the various files that constitute an Oasis mod
 
 #### Exercise 3: Running a model in the Oasis API.
 In this exercise you will run an analysis using the Oasis API.
-##### Linux
+#### Linux
 First, we need to start the API by running the following commands:
 ```
 cd gem
 docker-compose up -d
 docker ps -a
 ```
-##### Windows
+#### Windows
 The API was already started in the setup. The IP of the API can be obtained with following command:
 ```
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' gem_server_1
@@ -131,12 +131,12 @@ For the exercise details, go to the exercise_3 Jupyter notebook.
 
 #### Exercise 4: Running a model in the Oasis UI.
 In this exercise you will run an analysis using the Oasis UI.
-##### Linux
+#### Linux
 ```
 docker-compose -f docker-compose.oasis_ui.yml -f docker-compose.yml up -d
 docker ps -a
 ```
-##### Windows
+#### Windows
 The Oasis UI can be accessed via: http://localhost:8080
 ##### Exercise goals:
 - Introduction to the Oasis UI.
