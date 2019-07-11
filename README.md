@@ -5,7 +5,7 @@
 ## Overview
 ### Model data
 
-The model data used in the exercises is an adapted version of a GEM hazard model for the Dominican Republic. This is based in work by Sunstone Risk, further details ow which can be found [here](http://www.sunstonerisk.com/gem/). In the full implementation different intensity measures are used depending on the risk, but in the workshop version we have a simplified version using PGA only.
+The model data used in the exercises is an adapted version of a GEM hazard model for the Dominican Republic. This is based in work by Sunstone Risk, further details o which can be found [here](http://www.sunstonerisk.com/gem/). In the full implementation different intensity measures are used depending on the risk, but in the workshop version we have a simplified version using PGA only.
 
 ### Oasis ecosystem
 
@@ -13,10 +13,13 @@ The Oasis ecosystem has four main components:
 
 1 - Oasis Platform
 Data standards, an API, tools and components for building and running catastrophe models. 
+
 2- Oasis User Interface
 Web based application for uploading exposure, running models deployed in Oasis, and retrieving results. 
+
 3- Oasis Model Development Kit
 Set of tools for building, calibrating and creating the deployment assets for Oasis-ready models.
+
 4- Oasis Model Library
 Hosted catalogue for Oasis-ready models.
 
