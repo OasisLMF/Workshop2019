@@ -29,7 +29,7 @@ services:
      - OASIS_CELERY_DB_PORT=3306
      - STARTUP_RUN_MIGRATIONS=true
    volumes:
-     - ${OASIS_MEDIA_ROOT:-./gem/docker-shared-fs}:/shared-fs:rw
+     - ${OASIS_MEDIA_ROOT:-./docker-shared-fs}:/shared-fs:rw
      - ./model_resource.json:/var/www/oasis/src/server/static/model_resource.json
   worker-monitor:
    image: coreoasis/api_server:latest
@@ -56,7 +56,7 @@ services:
      - OASIS_CELERY_DB_NAME=celery
      - OASIS_CELERY_DB_PORT=3306
    volumes:
-     - ${OASIS_MEDIA_ROOT:-./gem/docker-shared-fs}:/shared-fs:rw
+     - ${OASIS_MEDIA_ROOT:-./docker-shared-fs}:/shared-fs:rw
   worker:
     image: coreoasis/model_worker:latest
     links:
@@ -78,7 +78,7 @@ services:
      - OASIS_CELERY_DB_PORT=3306
     volumes:
      - .:/var/oasis:rw
-     - ${OASIS_MEDIA_ROOT:-./gem/docker-shared-fs}:/shared-fs:rw
+     - ${OASIS_MEDIA_ROOT:-./docker-shared-fs}:/shared-fs:rw
   server-db:
     image: mysql:8.0.15
     command:
@@ -89,7 +89,7 @@ services:
       - MYSQL_PASSWORD=oasis
       - MYSQL_DATABASE=oasis
     volumes:
-      - ${OASIS_DOCKER_DB_DATA_DIR:-./gem/db-data}/server:/var/lib/mysql/:rw
+      - ${OASIS_DOCKER_DB_DATA_DIR:-./db-data}/server:/var/lib/mysql/:rw
   celery-db:
     image: mysql:8.0.15
     command:
@@ -100,7 +100,7 @@ services:
       - MYSQL_PASSWORD=password
       - MYSQL_DATABASE=celery
     volumes:
-      - ${OASIS_DOCKER_DB_DATA_DIR:-./gem/db-data}/celery:/var/lib/mysql/:rw
+      - ${OASIS_DOCKER_DB_DATA_DIR:-./db-data}/celery:/var/lib/mysql/:rw
   rabbit:
     image: rabbitmq:3-management
     environment:
