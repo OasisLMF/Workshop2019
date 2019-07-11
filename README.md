@@ -80,6 +80,12 @@ The full model data also needs to be created from smaller files, that are compat
 cat gem/model_data/GMO/footprint_data/* > gem/model_data/GMO/footprint.csv
 ```
 
+The docker-compose_win.yml file has to be updated with the directory of the workshop:
+```
+echo "      - "$(pwd)":/Notebook/" >> gem/docker-compose_win.yml
+```
+
+
 The notebooks and the API now can be launched together:
 
 ```
