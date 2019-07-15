@@ -9,19 +9,15 @@ The model data used in the exercises is an adapted version of a GEM hazard model
 
 ### Oasis ecosystem
 
-The Oasis ecosystem has four main components:
+The Oasis ecosystem has four main components.
 
-1 - Oasis Platform
-Data standards, an API, tools and components for building and running catastrophe models. 
+1. Oasis Platform - Data standards, an API, tools and components for building and running catastrophe models. 
 
-2- Oasis User Interface
-Web based application for uploading exposure, running models deployed in Oasis, and retrieving results. 
+2. Oasis User Interface - Web based application for uploading exposure, running models deployed in Oasis, and retrieving results (via the MDK). 
 
-3- Oasis Model Development Kit
-Set of tools for building, calibrating and creating the deployment assets for Oasis-ready models.
+3. Oasis Model Development Kit - Command line toolkit and reusable libraries for building, calibrating and creating the deployment assets for Oasis-ready models. It can also be used independently to run Oasis models end-to-end locally, or remotely via the Oasis API.
 
-4- Oasis Model Library
-Hosted catalogue for Oasis-ready models.
+4. Oasis Model Library - Hosted catalogue for Oasis-ready models.
 
 The ecosystem is shown in the diiagram below.
 
