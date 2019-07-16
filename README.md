@@ -100,7 +100,7 @@ docker ps -a
 ##### Exercise goals:
 - Introduction to the Oasis UI.
 
-## Reference ocumentation
+## Reference documentation
 ### Oasis
 * <a href="https://oasislmf.github.io">General Oasis documentation</a>
 * <a href="http://localhost:8000/html/docs/oasis_cli.html">Model Development Kit (MDK)</a>
