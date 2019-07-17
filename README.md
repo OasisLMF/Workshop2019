@@ -37,9 +37,13 @@ The pre-requisites for the system on an Ubuntu based system are listed in apt.tx
 cat apt.txt | xargs sudo apt-get install -y
 ```
 
-If using another distribution then the comparable packages will need to be identified and installed, or alternatively use a Docker image. If using Mac OS X (10.10 or later) the best approach is to first install the <a href="https://brew.sh/" target="_blank">Homebrew</a> package manager, and use Homebrew to install the system libraries and dependencies (including Python 3), followed by `pip` (or `pip3`) to install the workshop specific Python requirements.
+If using another distribution then the comparable packages will need to be identified and installed, or alternatively use a Docker image. If using Mac OS X (10.10 or later) the best approach is to first install, if you don't already have it, the <a href="https://developer.apple.com/library/archive/technotes/tn2339/_index.html" target="_blank">Xcode command line tools</a> (collection of compilers and other command line development utilities) using
 
-To install Homebrew you can run this Ruby command in Terminal
+```
+xcode-select --install
+```
+
+and then install <a href="https://brew.sh/" target="_blank">Homebrew</a> package manager using
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
