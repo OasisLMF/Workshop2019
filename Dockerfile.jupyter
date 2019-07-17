@@ -1,0 +1,17 @@
+FROM python:3.6
+WORKDIR /Notebook
+
+COPY . /Notebook
+RUN apt-get update && apt-get install -y $(grep -vE "^\s*#" apt_win.txt) && \
+    rm -rf /var/lib/apt/lists/*
+RUN pip install -r requirements.txt
+RUN pip install ipykernel
+RUN ipython kernel install --user --name=OasisWorkshop2018
+
+#COPY ./jupyter/set_jupyter_password.py /usr/local/bin/
+#COPY ./jupyter/startup.sh /usr/local/bin/
+#RUN mkdir -p /root/.jupyter/
+#RUN touch /root/.jupyter/jupyter_notebook_config.json
+
+EXPOSE 8888
+ENTRYPOINT jupyter notebook  --NotebookApp.token='' --NotebookApp.password='' --no-browser --port=8888 --ip=0.0.0.0 --NotebookApp.base_url=/jupyter --allow-root 
