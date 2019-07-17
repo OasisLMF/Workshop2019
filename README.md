@@ -43,7 +43,6 @@ To install Homebrew you can run this Ruby command in Terminal
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 ```
 
 Then update and upgrade Homebrew using
@@ -56,7 +55,6 @@ Then install the system libraries and dependencies using
 
 ```
 cat brew.txt | xargs brew install
-
 ```
 
 (You may find that this step requires some manual interaction or installations, Python 3 should get installed as part of this step, including `pip`). Once this is complete you can create the Python virtual env. and install the Python libraries in the virtual env. in the normal way using `pip install -r`, as described in the next section.
