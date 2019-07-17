@@ -43,7 +43,7 @@ If using another distribution then the comparable packages will need to be ident
 xcode-select --install
 ```
 
-and then install <a href="https://brew.sh/" target="_blank">Homebrew</a> package manager using
+and then install the <a href="https://brew.sh/" target="_blank">Homebrew</a> package manager using
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
