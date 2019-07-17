@@ -1,0 +1,10 @@
+autoconf
+gdb
+geos
+git
+libspatialindex
+libtool
+mysql-client
+python3
+tree
+vim

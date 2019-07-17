@@ -27,7 +27,9 @@ This excercises in this workshop will illustrate how the components of the ecosy
 
 ## Setting up the environment
 
-### Local install (Linux)
+### Local install (Linux + Mac OS X)
+
+#### System libraries and dependencies
 
 The pre-requisites for the system on an Ubuntu based system are listed in apt.txt. These can be installed by running the following command. Note that this is not required if your environment has been provided as part of an Oasis workshop.
 
@@ -35,7 +37,31 @@ The pre-requisites for the system on an Ubuntu based system are listed in apt.tx
 cat apt.txt | xargs sudo apt-get install -y
 ```
 
-If using another distribution then the comparable packages will need to be identified and installed, or alternatively use a Docker image.
+If using another distribution then the comparable packages will need to be identified and installed, or alternatively use a Docker image. If using Mac OS X (10.10 or later) the best approach is to first install the <a href="https://brew.sh/" target="_blank">Homebrew</a> package manager, and use Homebrew to install the system libraries and dependencies (including Python 3), followed by `pip` (or `pip3`) to install the workshop specific Python requirements.
+
+To install Homebrew you can run this Ruby command in Terminal
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+```
+
+Then update and upgrade Homebrew using
+
+```
+brew update && brew upgrade
+```
+
+Then install the system libraries and dependencies using
+
+```
+cat brew.txt | xargs brew install
+
+```
+
+(You may find that this step requires some manual interaction or installations, Python 3 should get installed as part of this step, including `pip`). Once this is complete you can create the Python virtual env. and install the Python libraries in the virtual env. in the normal way using `pip install -r`, as described in the next section.
+
+#### Python libraries
 
 We recommend using a Python virtual environment for running the exercises. To set up the your virtual environment, run the following commands in the project root directory. Note that Python 3.6 is required for the Oasis MDK.
 
